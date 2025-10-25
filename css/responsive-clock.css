@@ -1,5 +1,3 @@
-
-
 @media screen and (max-width: 767px) {
   .flipTimebox .flip-clock-wrapper ul {
     height: 50px;
@@ -48,7 +46,9 @@
     font-size: 20px !important;
   }
 }
+
 @media screen and (max-width: 568px) {
+
   .flipTimebox .flip-clock-wrapper ul {
     margin: 2px;
   }
@@ -76,6 +76,7 @@
     font-size: 18px !important;
   }
 }
+
 @media screen and (max-width: 480px) {
   .flipTimemodulesboxes {
     padding: 0;
@@ -114,9 +115,14 @@
     margin-left: -10px;
   }
   .flipTimebox {
-    margin: 50px 0 100px 20px;
+    /* margin: 50px 0 100px 20px; */
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    text-align: center;
   }
 }
+
 @media screen and (max-width: 360px) {
   .flipTimebox .flip-clock-divider .flip-clock-label {
     font-size: 1em;
@@ -151,6 +157,7 @@
     margin: 50px 0 100px 20px;
   }
 }
+
 @media screen and (max-width: 320px) {
   .flipTimebox .flip-clock-wrapper {
     padding-left: 5px;
@@ -177,6 +184,13 @@
   .flipTimebox .flip-clock-divider.seconds .flip-clock-label {
     right: 14px;
   }
+}
+
+.flipTimebox {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  text-align: center;
 }
 
 .flip-clock-wrapper {
