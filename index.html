@@ -31,18 +31,6 @@
 			content = "Alice & Ross"
 		>
 
-		<!-- Facebook and Twitter integration -->
-		<meta 
-			property = "og:image"
-			content = "images/og.jpg"
-		>
-		<meta
-			property = "og:site_name"
-			content = "Alice ❤️ Ross TODO"
-		>
-		<meta property="og:title" content="Alice ❤️ Ross TODO">
-		<meta property="og:description" content="TODO">
-
 		<!-- Size of image. Any size up to 300. Anything above 300px will not work in WhatsApp -->
 		<meta property="og:image:width" content="300">
 		<meta property="og:image:height" content="300">
@@ -53,7 +41,10 @@
 		<meta property="og:image:type" content="image/jpeg">
 
 
-		<link href='https://fonts.googleapis.com/css?family=Work+Sans:400,300,600,400italic,700' rel='stylesheet' type='text/css'>
+		<link
+			href='https://fonts.googleapis.com/css?family=Work+Sans:400,300,600,400italic,700'
+			rel='stylesheet' type='text/css'
+		>
 		<link href="https://fonts.googleapis.com/css?family=Sacramento" rel="stylesheet">
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Engagement" rel="stylesheet">
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia+Sans+Condensed" rel="stylesheet">
@@ -92,6 +83,8 @@
 		<div class="fh5co-loader"></div>
 		
 		<div id = "page">
+
+			<!-- Navigation bar -->
 			<nav class="fh5co-nav" role="navigation">
 				<div class="container">
 					<div class="row">
@@ -101,13 +94,13 @@
 									<a href="index.html">Home</a>
 								</li>
 								<li class="active">
-									<a href="#fh5co-event">Events</a>
+									<a href="#event">Events</a>
 								</li>
 								<li class="active">
-									<a href="#fh5co-gallery">Gallery</a>
+									<a href="#gallery">Gallery</a>
 								</li>
 								<li class="active">
-									<a href="#fh5co-services">Highlights</a>
+									<a href="#highlights">Highlights</a>
 								</li>
 							</ul>
 						</div>
@@ -149,7 +142,9 @@
 					</div>
 				</div>
 			</header>
-			<div id="fh5co-event" class="fh5co-bg">
+
+			<!-- Location and others -->
+			<div id="event" class="fh5co-bg">
 				<div class="overlay"></div>
 				<div class="container">
 					<div class="row">
@@ -191,7 +186,9 @@
 					</div>
 				</div>
 			</div>
-			<div id="fh5co-gallery" class="fh5co-section-gray">
+
+			<!-- Gallery -->
+			<div id="gallery" class="fh5co-section-gray">
 				<div class="container">
 					<div class="row">
 						<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
@@ -232,7 +229,9 @@
 					</div>
 				</div>
 			</div>
-			<div id="fh5co-services" class="fh5co-section-gray">
+
+			<!-- Highlights -->
+			<div id="highlights" class="fh5co-section-gray">
 				<div class = "container">
 					<div class = "row animate-box">
 						<div
@@ -254,6 +253,7 @@
 			</div>
 		</div>
 
+		<!-- Top button -->
 		<div class = "gototop js-top">
 			<a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
 		</div>
