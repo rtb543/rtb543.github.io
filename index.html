@@ -84,14 +84,15 @@
 		
 		<div id = "page">
 
-			<!-- Navigation bar -->
+			<!-- navigation bar -->
+
 			<nav class="fh5co-nav" role="navigation">
 				<div class="container">
 					<div class="row">
-						<div class="col-xs-10 text-right menu-1">
+						<div class="col-xs-12 text-right menu-1">
 							<ul>
 								<li class="active">
-									<a href="index.html">Home</a>
+									<a href="/">Home</a>
 								</li>
 								<li class="active">
 									<a href="#event">Events</a>
@@ -108,11 +109,14 @@
 				</div>
 			</nav>
 
+
+
+
 			<header
-			id="fh5co-header"
-			class="fh5co-cover"
-			role="banner"
-			style="background-image:url(images/bg.jpg);" data-stellar-background-ratio="0.5">
+				id="header"
+				class="fh5co-cover"
+				role="banner"
+				style="background-image:url(images/bg.jpg);" data-stellar-background-ratio="0.5">
 				<div class="overlay"></div>
 				<div class="container">
 					<div class="row">
@@ -124,18 +128,20 @@
 								>
 								<h1>Alice &amp; Ross</h1>
 								<br>
-								<img src="images/fprint.png" alt="Alice + Ross"> 
-								<h2>Whenever</h2>
-								<h2>
+								<img
+									src="images/fprint.png"
+								> 
+								<h2>05/09/2026 - Selgars Mill</h2>
+								<!-- <h2>
 									"Don't deprive me of the funk"
 									<br> AMH 23/08/2025
-								</h2>
+								</h2> -->
 								<div class="flipTimebox">
 									<div class="clock clock-fix"></div>
 								</div>
-								<p>
-									<a href="#fh5co-event" class="btn btn-default btn-sm">Save our date</a>
-								</p>
+								<!-- <p>
+									<a href="#event" class="btn btn-default btn-sm">Save our date</a>
+								</p> -->
 								</div>
 							</div>
 						</div>
@@ -144,7 +150,8 @@
 			</header>
 
 			<!-- Location and others -->
-			<div id="event" class="fh5co-bg">
+			 
+			<div id="event" class="fh5co-section-gray">
 				<div class="overlay"></div>
 				<div class="container">
 					<div class="row">
@@ -172,9 +179,10 @@
 											</b>
 										</p>
 										<iframe
-											src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2516.454125737915!2d-3.353170623416321!3d50.89681277168089!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x486d95ea833f2597%3A0x8aa36b2ee5c292eb!2sSelgars%20Mill!5e0!3m2!1sen!2suk!4v1761431020088!5m2!1sen!2suk"
-											width = "300"
-											height = "200"
+											class="centered-iframe"
+											src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJlyU_g-qVbUgR65LC5S5ro4o&key=AIzaSyCwIh5_-x03Ss9CtI63hFvXsZNsk2bEYDw"	
+											width = "600"
+											height = "400"
 											style = "border:0;"
 											allowfullscreen = ""
 											loading = "lazy" referrerpolicy="no-referrer-when-downgrade">
@@ -188,6 +196,7 @@
 			</div>
 
 			<!-- Gallery -->
+
 			<div id="gallery" class="fh5co-section-gray">
 				<div class="container">
 					<div class="row">
@@ -230,8 +239,21 @@
 				</div>
 			</div>
 
+			<footer id="footer" class="fh5co-footer">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12 text-center">
+							<br><br><br>
+							<!-- Footer content will go here later -->
+							<br><br><br>
+						</div>
+					</div>
+				</div>
+			</footer>
+
 			<!-- Highlights -->
-			<div id="highlights" class="fh5co-section-gray">
+
+			<!-- <div id="highlights" class="fh5co-section-gray">
 				<div class = "container">
 					<div class = "row animate-box">
 						<div
@@ -250,12 +272,13 @@
 						</div>
 					</div>
 				</div>		
-			</div>
+			</div> -->
+			
 		</div>
 
 		<!-- Top button -->
 		<div class = "gototop js-top">
-			<a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
+			<a href="" class="js-gotop"><i class="icon-arrow-up"></i></a>
 		</div>
 
 		<!-- jQuery -->

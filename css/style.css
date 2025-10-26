@@ -224,22 +224,6 @@ h1, h2, h3, h4, h5, h6, figure {
   color: #fff !important;
 }
 
-#fh5co-counter,
-#fh5co-event,
-.fh5co-bg {
-  background-size: cover;
-  background-position: top center;
-  background-repeat: no-repeat;
-  position: relative;
-}
-
-.fh5co-bg {
-  background-position: center center;
-  width: 100%;
-  float: left;
-  position: relative;
-}
-
 .fh5co-video {
   height: 450px;
   overflow: hidden;
@@ -1131,6 +1115,7 @@ form label {
 }
 
 .fh5co-heading {
+  margin-top: 60px;
   margin-bottom: 5em;
 }
 .fh5co-heading.fh5co-heading-sm {
@@ -1805,3 +1790,27 @@ form label {
 
 /*# sourceMappingURL=style.css.map */
 
+.menu-1 ul {
+    float: right;
+    margin-right: 0;
+}
+
+.menu-1 ul li {
+    display: inline-block;
+    margin-left: 20px;  /* Adds space between nav items */
+}
+
+.spaced-head {
+  margin-top: 60px; /* adjust value to taste */
+  margin-bottom: 30px;
+}
+
+.space-bottom {
+  margin-bottom: 30px;
+}
+
+.centered-iframe {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+}
