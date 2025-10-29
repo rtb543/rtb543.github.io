@@ -57,6 +57,7 @@
 
 		<!-- Theme style  -->
 		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/style-text.css">
 
 	</head>
 
@@ -95,122 +96,92 @@
 				id="header"
 				class="fh5co-cover"
 				role="banner"
-				style="background-image:url(images/bg.jpg);" data-stellar-background-ratio="0.5">
+				style="background-image:url(images/bg.jpg);">
 				<div class="overlay"></div>
 				<div class="container">
 					<div class="row">
 						<div class="col-md-8 col-md-offset-2 text-center">
-							<div class="display-t">
-								<div
-								class = "display-tc" 
-								>
-								<h1>Alice &amp; Ross</h1>
-								<br>
-								<img
-									src="images/fprint.png"
-								> 
-								<h2>05/09/2026 - Selgars Mill</h2>
-								<h2>Clock goes here</h2>
-								</div>
-							</div>
+							<!-- <div class="myt">
+							<div class="mytc"> -->
+								<section class="centered">
+									<h1>Alice &amp; Ross</h1>
+									<br>
+									<img src="images/fprint.png"> 
+									<h2>05/09/2026 - Selgars Mill</h2>
+									<h3>Clock goes here</h3>
+								</section>
+							<!-- </div>
+							</div> -->
 						</div>
 					</div>
 				</div>
 			</header>
 
 			<!-- Location -->
-			 
 			<div id="event" class="fh5co-section-gray">
-				<div class="overlay"></div>
+				<main style="max-width: 700px; margin: 0 auto; padding: 1rem;">
+					<div class="text-center fh5co-heading">
+						<h1>Location Location Location</h1>
+					</div>
+				</main>
+			</div>
+
+			<!-- Itinerary -->
+			<div id="itinerary" class="fh5co-section-gray">
 				<div class="container">
 					<div class="row">
-						<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-							<h2>Location Location Location</h2>
+						<div class="text-center fh5co-heading">
+							<h1>Itinerary</h1>
 						</div>
 					</div>
+				</div>
+			</div>
 
-					<!-- Location and map content goes here
+			<!-- Food & Drink -->
+			<div id="fooddrink" class="fh5co-section-gray">
+				<div class="container">
 					<div class="row">
-						<div class="display-t">
-							<div class="display-tc">
-								<div class = "col-md-6 col-md-offset-3 text-center">
-									<div class="event-wrap animate-box">
-										<h3>Somewhere idk</h3>
-										<div class="event-col">
-											<i class="icon-calendar"></i>
-											<span>Someday idk</span>
-										</div>
-										<div class="event-col">
-											<i class="icon-clock"></i>
-											<span>Sometime idk</span>
-										</div>
-										<p>
-											Now lets all get baked like <b>
-												Anita
-											</b>
-										</p>
-										<iframe
-											class="centered-iframe"
-											src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJlyU_g-qVbUgR65LC5S5ro4o&key=AIzaSyCwIh5_-x03Ss9CtI63hFvXsZNsk2bEYDw"	
-											width = "600"
-											height = "400"
-											style = "border:0;"
-											allowfullscreen = ""
-											loading = "lazy" referrerpolicy="no-referrer-when-downgrade">
-										</iframe>
-									</div>
-								</div>
-							</div>
+						<div class="fh5co-heading text-center">
+							<h1>Food &amp; Drink</h1>
 						</div>
-					</div> -->
-
+					</div>
 				</div>
 			</div>
 
 			<!-- Gallery -->
-
 			<div id="gallery" class="fh5co-section-gray">
 				<div class="container">
 					<div class="row">
-						<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-							<h2>Gallery</h2>
+						<div class="text-center fh5co-heading">
+							<h1>Gallery</h1>
 						</div>
 					</div>
+				</div>
+			</div>
 
-					<!-- Gallery goes here if we want?
-					<div class="row row-bottom-padded-md">
-						<div class="col-md-12">
-							<ul id="fh5co-gallery-list">
-								<li
-								class="one-third animate-box" 
-								data-animate-effect="fadeIn"
-								style="background-image: url(images/RS1.jpg); "> 
-									<a href="images/RS1.jpg">
-										<div class="case-studies-summary">
-										</div>
-									</a>
-								</li>
-								<li
-								class = "one-third animate-box"
-								data-animate-effect = "fadeIn"
-								style="background-image: url(images/RS2.jpg); "> 
-									<a href="images/RS2.jpg">
-										<div class="case-studies-summary">
-										</div>
-									</a>
-								</li>
-								<li
-								class = "one-third animate-box" 
-								data-animate-effect = "fadeIn"
-								style = "background-image: url(images/RS3.jpg); "> 
-									<a href="images/RS3.jpg">
-										<div class="case-studies-summary"></div>
-									</a>
-								</li>
-							</ul>		
+			<!-- Registry -->
+			<div id="registry" class="fh5co-section-gray">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+							<h1>Registry</h1>
 						</div>
-					</div> -->
+					</div>
+				</div>
+			</div>
 
+			<!-- FAQ -->
+			<div id="faq" class="fh5co-section-gray">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+							<h1>faq</h1>
+						</div>
+					</div>
+					<details>
+						<summary>Describe to me your perfect Sunday.</summary>
+						<p>I'll handle this one Nicholas.</p>
+					</details>
 				</div>
 			</div>
 
