@@ -7,29 +7,28 @@
 }
 @font-face { font-family: Amsterdam; src: url('../fonts/AmsterdamOne.ttf'); } 
 
-h1 h2 h3 {
-  display: block;
+h1, h2, h3 {
   font-weight: 400;
   line-height: 1.5;
-  margin: 0;
-  padding: 0;
   unicode-bidi: isolate;
 }
 
-h1 {
+h1, h2 {
   color: white;
+}
+
+h1 {
   font-family: "Amsterdam", Arial, serif;
   font-size: 65px;
 }
 
-.fh5co-heading h1 {
-  color: #646464;
-}
-
 h2 {
-  color: white;
   font-family: Engagement;
   font-size: 30px;
+}
+
+.fh5co-heading h1, .myheader h1 {
+  color: #646464;
 }
 
 h3 {

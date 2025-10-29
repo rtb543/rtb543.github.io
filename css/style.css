@@ -49,12 +49,10 @@ body {
   background: rgba(0, 0, 0, 0.04);
 }
 
-.fh5co-heading {
+.myheader {
   margin-top: 60px;
   margin-bottom: 5em;
-}
-.fh5co-heading.fh5co-heading-sm {
-  margin-bottom: 2em;
+  text-align: center;
 }
 
 .js .animate-box {
