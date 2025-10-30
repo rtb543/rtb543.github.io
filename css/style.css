@@ -14,57 +14,35 @@ body {
   margin: 0px;
 }
 
-#page {
-  position: relative;
-  overflow-x: hidden;
-  width: 100%;
-  height: 100%;
-  -webkit-transition: 0.5s;
-  -o-transition: 0.5s;
-  transition: 0.5s;
-}
-
-.fh5co-cover {
-  height: 1000px;
+.cover {
+  height: 100vh;
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
   width: 100%;
 }
-.fh5co-cover .overlay {
-  z-index: 0;
-  position: absolute;
-  bottom: 0;
-  top: 0;
-  left: 0;
-  right: 0;
-  background: rgba(147, 147, 147, 0.5);
-}
 
-.simply-countdown {
-  /* The countdown */
-  margin-bottom: 2em;
-  margin-top: 2em;
-}
-
-.myheader {
-  margin-top: 60px;
-  margin-bottom: 5em;
+header {
+  margin: 0 auto;
   text-align: center;
 }
 
-.mysection {
+section {
   margin: 0 auto;
   max-width: 800px;
   padding: 1rem;
 }
 
-/* .masklayer{
+.cover section {
+  width: 100%;
+}
+
+.masklayer{
   mask-image: linear-gradient(
     white 30%,
     transparent 100%
   );
-} */
+}
 
 /* FAQ Section */
 
