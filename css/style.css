@@ -3,6 +3,7 @@
 * 	Template Style 
 *
 * ======================================================= */
+
 body {
   font-family: "Work Sans", Arial, sans-serif;
   font-weight: 400;
@@ -58,15 +59,13 @@ body {
   padding: 1rem;
 }
 
-.js .animate-box {
-  opacity: 0;
-}
+/* .masklayer{
+  mask-image: linear-gradient(
+    white 30%,
+    transparent 100%
+  );
+} */
 
-.centered-iframe {
-  display: block;
-  margin: 0 auto;
-  max-width: 100%;
-}
 /* FAQ Section */
 
 details {
@@ -106,8 +105,8 @@ details[open] summary::after {
 }
 
 details p {
-  margin-top: 0rem;
-  margin-bottom: 0rem;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 /* Centering */
