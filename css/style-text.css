@@ -1,11 +1,5 @@
-@font-face {
-  font-family: 'icomoon';
-  src: url("../fonts/icomoon/icomoon.eot?srf3rx");
-  src: url("../fonts/icomoon/icomoon.eot?srf3rx#iefix") format("embedded-opentype"), url("../fonts/icomoon/icomoon.ttf?srf3rx") format("truetype"), url("../fonts/icomoon/icomoon.woff?srf3rx") format("woff"), url("../fonts/icomoon/icomoon.svg?srf3rx#icomoon") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
 @font-face { font-family: Amsterdam; src: url('../fonts/AmsterdamOne.ttf'); } 
+@font-face { font-family: Gellatio; src: url('../fonts/Gellatio.ttf'); } 
 
 h1, h2, h3 {
   font-weight: 400;
@@ -18,7 +12,7 @@ h1, h2 {
 }
 
 h1 {
-  font-family: "Amsterdam", Arial, serif;
+  font-family: "Gellatio", "Amsterdam", Arial, serif;
   font-size: 65px;
 }
 
