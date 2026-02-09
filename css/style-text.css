@@ -1,5 +1,20 @@
 @font-face { font-family: Amsterdam; src: url('../fonts/AmsterdamOne.ttf'); } 
 @font-face { font-family: Gellatio; src: url('../fonts/Gellatio.ttf'); } 
+@font-face { font-family: Livret; src: url('../fonts/tt_livret.ttf'); } 
+@font-face { font-family: Kenao; src: url('../fonts/Kenao.otf'); }
+
+.tangerine-regular {
+  font-family: "Tangerine", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.tangerine-bold {
+  font-family: "Tangerine", cursive;
+  font-weight: 700;
+  font-style: normal;
+}
+
 
 h1, h2, h3 {
   font-weight: 400;
@@ -19,6 +34,13 @@ h1 {
 h2 {
   font-family: Engagement;
   font-size: 30px;
+}
+
+section {
+  font-family: "Tangerine", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 40px;
 }
 
 section header h1 {
