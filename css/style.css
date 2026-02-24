@@ -12,6 +12,8 @@ br {
   content: " " !important;
   display: block !important;
   margin: 1em 0 !important;
+  line-height: 2rem;
+  height: 2rem;
 }
 
  /* The sidepanel menu */
@@ -112,11 +114,6 @@ li {
   list-style: disc outside none;
   display: list-item;
   margin-left: 1em;
-}
-
-ul li a:hover {
-  background-color: white;
-  backdrop-filter: blur(10px);
 }
 
 .cover {
