@@ -4,6 +4,8 @@
 *
 * ======================================================= */
 
+/* General Styling */
+
 body {
   margin: 0px;
 }
@@ -20,7 +22,137 @@ a {
   text-decoration: none;
 }
 
-/* The sidepanel menu */
+ul {
+  list-style-type: disc;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: transparent;
+}
+
+li {
+  list-style: disc outside none;
+  display: list-item;
+  margin-left: 1em;
+}
+
+/* details p {
+  margin-top: auto;
+  margin-bottom: auto;
+} */
+
+/* Centering */
+/* TODO: FIX */
+
+/* p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  unicode-bidi: isolate;
+} */
+
+/* Page Cover Styling */
+
+.cover {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+  width: 100%;
+}
+
+.cover section {
+  width: 100%;
+}
+
+.centered {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: auto;
+  text-align: center;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+/* Body Styling */
+
+/* .container {
+  width: 600px;
+  margin: 0 auto;
+} */
+
+.row {
+  display: flow-root;
+}
+
+div.container>div:nth-of-type(even) {
+  background: #f6f6f6;
+}
+
+header {
+  margin: 0 auto;
+  text-align: center;
+}
+
+section {
+  margin: 3rem auto;
+  width: 90%;
+  max-width: 800px;
+  padding: 0;
+}
+
+.masklayer{
+  mask-image: linear-gradient(
+    white 50%,
+    transparent 100%
+  );
+}
+
+/* Clickbox Styling */
+
+details {
+  background: white;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+  margin-bottom: 1rem;
+  padding: 0.5rem 1.2rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  transition: background 0.3s;
+}
+
+details:hover {
+  background: #f3f4f6;
+}
+
+summary {
+  font-weight: 600;
+  cursor: pointer;
+  outline: none;
+  list-style: none;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+summary::after {
+  content: "➕";
+  float: right;
+  transition: transform 0.3s;
+}
+
+details[open] summary::after {
+  content: "➖";
+  transform: rotate(180deg);
+}
+
+/* The Sidepanel */
+
 .sidepanel {
   height: 250px; /* Specify a height */
   width: 0; /* 0 width - change this with JavaScript */
@@ -34,7 +166,6 @@ a {
   transition: 0.5s; /* 0.5 second transition effect to slide in the sidepanel */
 }
 
-/* The sidepanel links */
 .sidepanel a {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
@@ -76,156 +207,3 @@ a {
   background-color: #444;
 } 
 
-/* Navbar container */
-nav {
-  position: fixed;          /* stays at top even when scrolling */
-  top: 0;
-  left: 0;
-  width: 100%;
-  padding: 1rem 2rem;
-  background: transparent;
-  /* background: rgba(0, 0, 0, 0.3);
-  backdrop-filter: blur(10px); */
-  color: white;
-  z-index: 10;              /* ensures it stays above other elements */
-}
-
-/* Optional: make text visible on light backgrounds */
-nav a {
-  color: white;
-  text-decoration: none;
-  margin-right: 1.5rem;
-}
-
-nav ul {
-  list-style: none;
-  display: flex;
-  justify-content: flex-end;
-  margin: 0;
-  padding: 0;
-  float: right;
-}
-
-ul {
-  list-style-type: disc;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: transparent;
-}
-
-li {
-  list-style: disc outside none;
-  display: list-item;
-  margin-left: 1em;
-}
-
-.cover {
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100vh;
-  position: relative;
-  width: 100%;
-}
-
-.cover section {
-  width: 100%;
-}
-
-/* .container {
-  width: 600px;
-  margin: 0 auto;
-} */
-
-.row {
-  border: 1px solid rgb(255, 255, 255);
-}
-
-div.container>div:nth-of-type(even) {
-  background: #f6f6f6;
-}
-
-header {
-  margin: 0 auto;
-  text-align: center;
-}
-
-section {
-  margin: 3rem auto;
-  width: 90%;
-  max-width: 800px;
-  padding: 0;
-}
-
-.masklayer{
-  mask-image: linear-gradient(
-    white 50%,
-    transparent 100%
-  );
-}
-
-/* FAQ Section */
-details {
-  background: white;
-  border-radius: 12px;
-  border: 1px solid #e5e7eb;
-  margin-bottom: 1rem;
-  padding: 0.5rem 1.2rem;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
-  transition: background 0.3s;
-}
-
-details:hover {
-  background: #f3f4f6;
-}
-
-summary {
-  font-weight: 600;
-  cursor: pointer;
-  outline: none;
-  list-style: none;
-}
-
-summary::-webkit-details-marker {
-  display: none;
-}
-
-summary::after {
-  content: "➕";
-  float: right;
-  transition: transform 0.3s;
-}
-
-details[open] summary::after {
-  content: "➖";
-  transform: rotate(180deg);
-}
-
-/* details p {
-  margin-top: auto;
-  margin-bottom: auto;
-} */
-
-/* Centering */
-/* TODO: FIX */
-
-/* p {
-  display: block;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-  unicode-bidi: isolate;
-} */
-
-.centered {
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: auto;
-  text-align: center;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-}
