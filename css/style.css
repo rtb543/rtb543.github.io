@@ -36,23 +36,6 @@ li {
   margin-left: 1em;
 }
 
-/* details p {
-  margin-top: auto;
-  margin-bottom: auto;
-} */
-
-/* Centering */
-/* TODO: FIX */
-
-/* p {
-  display: block;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-  unicode-bidi: isolate;
-} */
-
 /* Page Cover Styling */
 
 .cover {
@@ -62,6 +45,7 @@ li {
   height: 100vh;
   position: relative;
   width: 100%;
+  z-index: 1;
 }
 
 .cover section {
@@ -81,17 +65,30 @@ li {
 
 /* Body Styling */
 
-/* .container {
-  width: 600px;
-  margin: 0 auto;
-} */
+.container {
+  position: relative;
+  z-index: 1;
+}
 
 .row {
   display: flow-root;
 }
 
-div.container>div:nth-of-type(even) {
-  background: #f6f6f6;
+div.container>div.row:nth-of-type(odd) {
+  background: #f5ebf3;
+  /* background: linear-gradient(
+    #cee6d2 0%,
+    #f5ebf3 50%,
+    #cee6d2 100%
+  ); */
+}
+
+div.container>div.row:nth-of-type(even) {
+  background:#cee6d2;
+  /* background: linear-gradient(
+    #f5ebf3 0%,
+    #cee6d2 50%,
+  ); */
 }
 
 header {
@@ -108,8 +105,10 @@ section {
 
 .masklayer{
   mask-image: linear-gradient(
-    white 50%,
-    transparent 100%
+    black 50%,
+    #cee6d280 80%,
+    #cee6d240 90%,
+    #cee6d200 100%
   );
 }
 
@@ -154,56 +153,100 @@ details[open] summary::after {
 /* The Sidepanel */
 
 .sidepanel {
-  height: 250px; /* Specify a height */
-  width: 0; /* 0 width - change this with JavaScript */
-  position: sticky; /* Stay in place */
-  z-index: 1; /* Stay on top */
+  position: fixed;
   top: 0;
   left: 0;
-  background-color: #686868;
+  
+  border-radius: 12px;
+  backdrop-filter: blur(4px);
+  background: #ffffff80;
+
+  z-index: 1000;
+
+  transform: translate(-100%);
+  transition: 0.5s;
+
   overflow-x: hidden; /* Disable horizontal scroll */
-  padding-top: 60px; /* Place content 60px from the top */
-  transition: 0.5s; /* 0.5 second transition effect to slide in the sidepanel */
+}
+
+.sidepanel.open {
+  transform: translateX(0);
 }
 
 .sidepanel a {
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #818181;
+  padding: 0.5rem;
+  color: #000000;
   display: block;
   transition: 0.3s;
 }
 
-/* When you mouse over the navigation links, change their color */
 .sidepanel a:hover {
-  color: #f1f1f1;
+  color: #404040;
 }
 
-/* Position and style the close button (top right corner) */
 .sidepanel .closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
+  font-size: xx-large;
 }
 
 /* Style the button that is used to open the sidepanel */
 .openbtn {
-  background-color: #b4b4b4;
-  border: none;
-  color: rgb(189, 189, 189);
-  cursor: pointer;
-  font-size: 20px;
-  padding: 10px 15px;
-  position: sticky; /* Stay in place */
+  position: fixed; /* Stay in place */
   top: 0;
   left: 0;
   z-index: 10; /* Stay on top */
+
+  background-color: #ffffff40;
+  border: none;
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  
+  cursor: pointer;
+  padding: 10px 15px;
+  transition: 0.5s;
+  border-radius: 12px;
+}
+
+.openbtn.closed {
+  transform: translateX(-100%);
 }
 
 .openbtn:hover {
   background-color: #444;
 } 
 
+/* Gallery */
+
+ div.image-container {
+  max-height: 50vh;
+  min-height: 50vh;
+  position: relative;
+  display: flex;
+  box-shadow: 0 0 20px 20px #cee6d2 inset;
+
+  z-index: 3;
+  &:before {
+    content: ' ';
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+div.scroll-container {
+  position: relative;
+  white-space: nowrap;
+  overflow: auto;
+
+  scrollbar-width: thin;
+  /* box-sizing: content-box; */
+}
+
+div.scroll-container img {
+  padding: 0px;
+  /* object-fit: contain;
+  max-width: 100%;
+  max-height: 100%;
+  z-index: 0;
+  position: relative; */
+}

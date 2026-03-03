@@ -1,7 +1,5 @@
 @font-face { font-family: Amsterdam; src: url('../fonts/AmsterdamOne.ttf'); } 
 @font-face { font-family: Gellatio; src: url('../fonts/Gellatio.ttf'); } 
-@font-face { font-family: Livret; src: url('../fonts/tt_livret.ttf'); } 
-@font-face { font-family: Kenao; src: url('../fonts/Kenao.otf'); }
 
 h1 {
   color: white;

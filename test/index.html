@@ -44,11 +44,6 @@
 			rel='stylesheet'
 			type='text/css'
 		>
-		<link 
-			href="https://fonts.googleapis.com/css?family=Sacramento" 
-			rel="stylesheet"
-			type='text/css'
-		>
 		<link
 			href="https://fonts.googleapis.com/css?family=Engagement" 
 			rel="stylesheet"
@@ -59,14 +54,6 @@
 			rel="stylesheet"
 			type='text/css'
         >
-		<link
-			href="https://fonts.googleapis.com/css2?family=Give+You+Glory&display=swap"
-			rel="stylesheet"
-		>
-		<link
-			href="https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap"
-			rel="stylesheet"
-		>
 		<link 
 			href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" 
 			rel="stylesheet"
@@ -79,10 +66,8 @@
 	</head>
 
 	<body>
-		<div class="page">
+		<div class="page" style="background-color: #cee6d2;">
 
-			<!-- <div class="fh5co-loader"></div> -->
-			
 			<header
 				id="home"
 				class="cover masklayer"
@@ -101,29 +86,38 @@
 					</h2>
 				</section>
 			</header>
-<!-- 
-			<button class="openbtn" onclick="openNav()">
-				&#9776;
-			</button>
 
-			<div id="mySidepanel" class="sidepanel">
-				<a 
-					href="javascript:void(0)"
-					class="closebtn"
-					onclick="closeNav()"
-				>
-					&times;
-				</a>
-				<a href="#">About</a>
-				<a href="#">Services</a>
-				<a href="#">Clients</a>
-				<a href="#">Contact</a>
-			</div> -->
 			<div class="container">
-
-				<!-- Welcome Message -->
-				<div class="row">
-					<section id="welcome">
+				<button id="myopenbtn" class="openbtn" onclick="openNav()">
+					&#9776;
+				</button>
+				
+				<div id="mySidepanel" class="sidepanel">
+					<a 
+						href="javascript:void(0)"
+						class="closebtn"
+						onclick="closeNav()"
+					>
+						&times;
+					</a>
+					<a href="#welcome">Welcome</a>
+					<a href="#rsvp">RSVP</a>
+					<a href="#where">Where</a>
+					<a href="#what">What</a>
+					<a href="#schedule">Schedule</a>
+					<a href="#accommodation">Accommodation</a>
+					<a href="#travel">Travel</a>
+					<a href="#registry">Registry</a>
+					<!-- <a href="#gallery">Gallery</a> -->
+					<a href="#dresscode">Dress Code</a>
+					<a href="#packing">Packing</a>
+					<a href="#foodanddrink">Food and Drink</a>
+					<a href="#activities">Activities</a>
+				</div>
+			
+				<!-- Welcome Message -->									
+				<div class="row" id="welcome">
+					<section>
 						<header>
 							<h1>Welcome</h1>
 						</header>
@@ -140,8 +134,8 @@
 				</div>
 
 				<!-- RSVP -->
-				<div class="row">
-					<section id="rsvp">
+				<div class="row" id="rsvp">
+					<section>
 						<header>
 							<h1>RSVP</h1>
 						</header>
@@ -152,7 +146,7 @@
 							<b>Bonus:</b> The first 10 people to RSVP will receive a prize... 👀
 						</p>
 						<p style="text-align: center;">
-							<a>Link here</a>
+							<a style="font-size: xx-large; font-family: Engagement;" href="https://docs.google.com/forms/d/e/1FAIpQLSefuoMaxagjRPQjdVungHO8-Y32jtLpq_bjiyRtlkuj1NOF0Q/viewform?usp=header">RSVP HERE!</a>
 						</p>
 						<p>
 							If you have any issues/queries, you can contact us by email at <a href="mailto:aliceplusross@gmail.com">aliceplusross@gmail.com</a>.
@@ -161,7 +155,7 @@
 				</div>
 
 				<!-- Where -->
-				<div class="row">
+				<div class="row" id="where">
 					<section id="details">
 						<header>
 							<h1>Where</h1>
@@ -170,8 +164,8 @@
 				</div>
 
 				<!-- What -->
-				<div class="row">
-					<section id="what">
+				<div class="row" id="what">
+					<section>
 						<header>
 							<h1>What</h1>
 						</header>
@@ -191,8 +185,8 @@
 				</div>
 
 				<!-- Schedule -->
-				<div class="row">
-					<section id="schedule">
+				<div class="row" id="schedule">
+					<section>
 						<header>
 							<h1>Schedule</h1>
 						</header>
@@ -274,8 +268,8 @@
 				</div>
 
 				<!-- Accomodation -->
-				<div class="row">
-					<section id="accomodation">
+				<div class="row" id="accomodation">
+					<section>
 						<header>
 							<h1>Accomodation</h1>
 						</header>
@@ -329,8 +323,8 @@
 				</div>
 
 				<!-- Travel -->
-				<div class="row">
-					<section id="travel">
+				<div class="row" id="travel">
+					<section>
 						<header>
 							<h1>Travel</h1>
 						</header>
@@ -377,8 +371,8 @@
 				</div>
 
 				<!-- Registry -->
-				<div class="row">
-					<section id="registry">
+				<div class="row" id="registry">
+					<section>
 						<header>
 							<h1>Registry</h1>
 						</header>
@@ -391,18 +385,25 @@
 					</section>
 				</div>
 
-				<!-- Gallery -->
-				<div class="row">
-					<section id="gallery">
+				<!-- Gallery
+				<div class="row" id="gallery">
+					<section>
 						<header>
 							<h1>Gallery</h1>
 						</header>
+						<div class="image-container">
+							<div class="scroll-container">
+								<img src="../images/selgars2.jpg">
+								<img src="../images/selgars.jpg">
+								<img src="../images/selgars2.jpg">
+							</div>
+						</div>
 					</section>
-				</div>
+				</div> -->
 				
 				<!-- Dress Code-->
-				<div class="row">
-					<section id="dresscode">
+				<div class="row" id="dresscode">
+					<section>
 						<header>
 							<h1>Dress Code</h1>
 						</header>
@@ -442,8 +443,8 @@
 				</div>
 
 				<!-- Packing List-->
-				<div class="row">
-					<section id="packing">
+				<div class="row" id="foodanddrink">
+					<section>
 						<header>
 							<h1>Packing List</h1>
 						</header>
@@ -560,7 +561,7 @@
 					</section>
 				</div>
 
-				<!-- FAQ -->
+				<!-- FAQ
 				<div class="row">
 					<section id="faq">
 						<header>
@@ -571,7 +572,7 @@
 							<p>I'll handle this one Nicholas.</p>
 						</details>
 					</section>
-				</div>
+				</div> -->
 
 				<!-- <footer id="footer">
 					<div class="container">
@@ -587,11 +588,13 @@
 
 		<script>
 			function openNav() {
-			document.getElementById("mySidepanel").style.width = "250px";
+				document.getElementById("mySidepanel").classList.add("open");
+				document.getElementById("myopenbtn").classList.add("closed");
 			}
-
+			
 			function closeNav() {
-			document.getElementById("mySidepanel").style.width = "0";
+				document.getElementById("mySidepanel").classList.remove("open");
+				document.getElementById("myopenbtn").classList.remove("closed");
 			}
 		</script>
 		<script 
