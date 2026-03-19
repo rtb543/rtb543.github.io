@@ -11,13 +11,13 @@ body {
   /* text-align: center; */
 }
 
-br {
+/* br {
   content: " " !important;
   display: block !important;
   margin: 1em 0 !important;
   line-height: 2rem;
   height: 2rem;
-}
+} */
 
 a {
   text-decoration: none;
